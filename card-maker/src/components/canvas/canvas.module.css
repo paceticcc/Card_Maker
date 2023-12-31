@@ -1,0 +1,7 @@
+.page {
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    background: '#FFFFFF';
+    border: 2px #000000 solid;
+}
