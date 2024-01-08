@@ -25,7 +25,6 @@ const TextBlock = (props: TextBlockProps) => {
       {state.value.join(" ")}
       {/* <div ref={dndControlRef}> */}
     </div>
-    // </div>
   );
 };
 

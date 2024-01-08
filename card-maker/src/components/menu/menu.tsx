@@ -6,7 +6,6 @@ import {
   FilterProps,
 } from "../models/models";
 import style from "./menu.module.css";
-import { ChangeEvent } from "react";
 
 type props = {
   addElement: (
@@ -37,37 +36,16 @@ const Menu = (props: props) => {
       value: ["Добавить текст"],
     }
     addElement(elem);
-  }
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const reader = new FileReader();
-    let file: File;
-    if (event.target.files) {
-      file = event.target.files[0];
-      reader.readAsDataURL(event.target.files[0]);
-    }
-
-    reader.onloadend = () => {
-      try {
-        if (typeof reader.result !== "string")
-          throw Error("invalid file type: " + typeof reader.result);
-        if (file.type !== "png/jpg")
-          throw Error("invalid file: " + file.type);
-      } catch (error) {
-        alert(error);
-      }
   };
   return (
     <div className={style.menu}>
       <button onClick={addTextBlock}>Добавить текст</button>
       <button>Добавить круг</button>
       <button>Добавить квадрат</button>
-      <button>
-        <input type="file" onChange={onChange} />Добавить картинку
-      </button>
+      <button>Добавить кнопку</button>
       <button>Добавить фильтр</button>
     </div>
   )
   }
-}
 
 export default Menu;
