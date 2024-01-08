@@ -42,7 +42,7 @@ const Menu = (props: props) => {
       <button onClick={addTextBlock}>Добавить текст</button>
       <button>Добавить круг</button>
       <button>Добавить квадрат</button>
-      <button>Добавить кнопку</button>
+      <button>Добавить картинку</button>
       <button>Добавить фильтр</button>
     </div>
   )
