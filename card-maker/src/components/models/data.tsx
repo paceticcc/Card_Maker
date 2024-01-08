@@ -69,7 +69,6 @@ const filterCollection: FilterCollection = [
 ];
 
 const page1: PageProps = {
-  // *минимальные данные
   id: "page1",
   width: 800,
   height: 600,
@@ -79,7 +78,6 @@ const page1: PageProps = {
 };
 
 const page2: PageProps = {
-  //*В коллекциях могут быть некоторые элементы (не все типы элементов могут быть).
   id: "page1",
   width: 800,
   height: 600,
@@ -126,7 +124,6 @@ const page2: PageProps = {
 };
 
 const page3: PageProps = {
-  //*максимальные данные для page
   id: "page1",
   width: 800,
   height: 600,
@@ -341,7 +338,6 @@ const page4: PageProps = {
 };
 
 const page5: PageProps = {
-  //*максимальные данные для page
   id: "page1",
   width: 800,
   height: 600,
@@ -351,7 +347,6 @@ const page5: PageProps = {
 };
 
 const page6: PageProps = {
-  //*максимальные данные для page
   id: "page1",
   width: 800,
   height: 600,
