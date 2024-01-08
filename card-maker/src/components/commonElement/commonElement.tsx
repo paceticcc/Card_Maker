@@ -38,7 +38,6 @@ const CommonElement = (props: Props) => {
   };
 
   useEffect(() => {
-    // TODO: эту логику перемещения можно вынести в отдельный компонент, div, который сможет отрисовывать в себе любой контент
 
     const { onDragStart } = registerDndItem({
       elementRef: ref,
